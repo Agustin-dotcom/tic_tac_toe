@@ -1,4 +1,4 @@
-Â#include<stdi.h>
+#include<stdio.h>
 
 void display_matrix(int matrix[n][n], int n){
 	for(int i=0;i<n;i++){
