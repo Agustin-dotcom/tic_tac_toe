@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-void display_matrix(int matrix[n][n], int n){
+void display_matrix(int n, int matrix[n][n]){
 	for(int i=0;i<n;i++){
 		for(int j=0;j<n;j++){
 			if(matrix[i][j]==0){
@@ -20,12 +20,12 @@ void display_matrix(int matrix[n][n], int n){
 */
 void main(){
 	int n = 3;
-	int matrix[n][n] = new int[n][n];
+	int matrix[n][n];
 	for(int i=0;i<n;i++){
 		for(int j=0;j<n;j++){
 			matrix[i][j] = 0; // (2)
 		}
 	}
-	display_matrix(matrix,n); // (1)
+	display_matrix(n,matrix); // (1)
 }
 
